@@ -5,8 +5,8 @@ public class Main {
 	        RegistrationService service = new RegistrationService();
 	        
 	        try {
-	            service.registerUser(12);
-	        } catch (AgeRestrictionException e) {
+	            service.registerUser(19);
+	        } catch (AgeRegistrationtionException e) {
 	            System.out.println(e.getMessage());
 	        }
 	    }
