@@ -19,18 +19,18 @@ public class One {
             names.add(name);
         }
 
-        System.out.println("\nВсе введенные имена:");
+        System.out.println("Все введенные имена:");
         for (String name : names) {
             System.out.println(name);
         }
 
-        System.out.print("\nВведите имя для поиска: ");
-        String searchName = scanner.nextLine();
+        System.out.print("Введите имя для поиска: ");
+        String search= scanner.nextLine();
         
-        if (names.contains(searchName)) {
-            System.out.println("Имя " + searchName + " найдено в списке.");
+        if (names.contains(search)) {
+            System.out.println("Имя " + search + " найдено в списке.");
         } else {
-            System.out.println("Имя " + searchName + " не найдено в списке.");
+            System.out.println("Имя " + search + " не найдено в списке.");
         }
         
         scanner.close();
