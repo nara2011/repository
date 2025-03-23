@@ -2,7 +2,7 @@ package Product1;
 
 import java.util.Comparator;
 
-public class Product implements Comparable<Product> {
+public class Product implements Comparator<Product> {
     String name;
     int price;
 
@@ -16,9 +16,12 @@ public class Product implements Comparable<Product> {
         return "Product [name=" + name + ", price=" + price + "]";
     }
 
-    @Override
-    public int compareTo(Product other) {
-        return this.name.compareTo(other.name);
-    }
+	@Override
+	public int compare(Product o1, Product o2) {
+		// TODO Auto-generated method stub
+		return o1.name.compareTo(o2.name);
+	}
+
+
 }
 
