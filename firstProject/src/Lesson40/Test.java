@@ -7,12 +7,12 @@ import java.util.function.Consumer;
 public class Test {
 public static void main(String[] args) {
 	 List<String> strings = new ArrayList<>();
-     strings.add("nara");
-     strings.add("meleyke");
-     strings.add("aylin");
+    ;
     
-     
      Consumer<String> printUpperCaseConsumer = str -> System.out.println(str.toUpperCase());
-     
+     printUpperCaseConsumer.accept("nara");
+     printUpperCaseConsumer.accept("meleyke"); 
+     printUpperCaseConsumer.accept("aylin");
+  
 }
 }
